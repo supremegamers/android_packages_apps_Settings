@@ -58,6 +58,7 @@ import com.android.settings.core.SettingsBaseActivity;
 import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.core.gateway.SettingsGateway;
 import com.android.settings.dashboard.DashboardFeatureProvider;
+import com.android.settings.development.RootAccessPreferenceController;
 import com.android.settings.homepage.TopLevelSettings;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.wfd.WifiDisplaySettings;
@@ -637,6 +638,11 @@ public class SettingsActivity extends SettingsBaseActivity
                         Settings.UserSettingsActivity.class.getName()),
                 UserHandle.MU_ENABLED && UserManager.supportsMultipleUsers()
                         && !Utils.isMonkeyRunning(), isAdmin)
+                || somethingChanged;
+
+        somethingChanged = setTileEnabled(changedList, new ComponentName(packageName,
+                        Settings.SuperuserActivity.class.getName()),
+                RootAccessPreferenceController.isRootForAppsEnabled(), isAdmin)
                 || somethingChanged;
 
         final boolean showDev = DevelopmentSettingsEnabler.isDevelopmentSettingsEnabled(this)
