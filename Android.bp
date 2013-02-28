@@ -31,12 +31,21 @@ android_library {
         "src/**/*.java", 
         "src/**/*.kt",
         "CherishSettings/src/**/*.java",
+        "koush/Widgets/Widgets/src/**/*.java",
+        "koush/Superuser/Superuser/src/**/*.java",
+        "src/com/android/settings/cyanogenmod/superuser/*.java",
     ],
 
-    aaptflags: ["--extra-packages com.cherish.settings"],
+    aaptflags: ["--extra-packages com.cherish.settings",
+                "--extra-packages com.koushikdutta.superuser",
+                "--extra-packages com.koushikdutta.widgets",    
+                ],
 
     resource_dirs: ["res",
-                    "CherishSettings/res"
+                    "CherishSettings/res",
+                    "koush/Widgets/WidgetsSample/res",
+                    "koush/Widgets/Widgets/res",
+                    "koush/Superuser/Superuser/res",
     ],
 
     static_libs: [
