@@ -218,13 +218,6 @@
         android:title="@string/camera_gesture_title"
         android:summary="@string/camera_gesture_desc" />
 
-    <SwitchPreference
-        android:key="tap_to_wake"
-		android:layout="@layout/cherish_preference_middle_card"
-        android:icon="@drawable/ic_settings_quick_gestures"
-        android:title="@string/tap_to_wake"
-        android:summary="@string/tap_to_wake_summary" />
-
      <SwitchPreference
         android:key="pocket_judge"
 		android:layout="@layout/cherish_preference_middle_card"
