@@ -1615,6 +1615,7 @@ En savoir plus : g.co/pixel/faceunlock."</string>
     <string name="system_update_settings_list_item_summary" msgid="6703752298349642101"></string>
     <string name="firmware_version" msgid="1606901586501447275">"Version d\'Android"</string>
     <string name="security_patch" msgid="4071756145347865382">"Mise à jour de sécurité Android"</string>
+    <string name="device_manufacturer" msgid="3516742885166545865">"Fabricant"</string>
     <string name="model_info" msgid="8997566254717810904">"Modèle"</string>
     <string name="hardware_revision" msgid="3454709180861965025">"Version du matériel"</string>
     <string name="fcc_equipment_id" msgid="6596668314025646129">"ID de l\'équipement"</string>

@@ -1615,6 +1615,7 @@ g.co/pixel/faceunlock येथे अधिक जाणून घ्या."</
     <string name="system_update_settings_list_item_summary" msgid="6703752298349642101"></string>
     <string name="firmware_version" msgid="1606901586501447275">"Android आवृत्ती"</string>
     <string name="security_patch" msgid="4071756145347865382">"Android सुरक्षा अपडेट"</string>
+    <string name="device_manufacturer" msgid="3516742885166545865">"निर्माता"</string>
     <string name="model_info" msgid="8997566254717810904">"मॉडेल"</string>
     <string name="hardware_revision" msgid="3454709180861965025">"हार्डवेअर आवृत्ती"</string>
     <string name="fcc_equipment_id" msgid="6596668314025646129">"उपकरण आयडी"</string>
