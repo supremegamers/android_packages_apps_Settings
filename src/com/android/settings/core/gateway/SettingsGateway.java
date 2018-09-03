@@ -162,6 +162,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.sakura.settings.SakuraSettings;
 import com.sakura.settings.fragments.misc.GamingMode;
+import com.sakura.settings.fragments.OmniJawsSettings;
 
 public class SettingsGateway {
 
@@ -313,6 +314,7 @@ public class SettingsGateway {
             MediaControlsSettings.class.getName(),
             SakuraSettings.class.getName(),
             GamingMode.class.getName(),
+	    OmniJawsSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -354,5 +356,6 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.SakuraSettingsActivity.class.getName(),
             Settings.GamingModeActivity.class.getName(),
+            Settings.OmniJawsSettingsActivity.class.getName()
     };
             }
