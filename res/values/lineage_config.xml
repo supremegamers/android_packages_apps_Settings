@@ -37,4 +37,8 @@
     <string name="config_batDesCap"></string>
     <string name="config_batChargeCycle"></string>
     <bool name="config_supportBatteryHealth">false</bool>
+
+    <!-- Smart Charging -->
+    <bool name="config_supportSmartCharging">false</bool>
+
 </resources>
