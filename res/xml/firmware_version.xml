@@ -21,6 +21,10 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+<PreferenceScreen
+    android:layout="@layout/sakura_logo"
+    android:key="sakura_logo" />
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
@@ -71,14 +75,14 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
-    <!-- Build date -->
+    <!-- Build date
     <Preference
         android:key="os_build_date"
         android:title="@*lineageos.platform:string/build_date"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageBuildDatePreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageBuildDatePreferenceController"/> -->
 
     <!-- Build -->
     <Preference
