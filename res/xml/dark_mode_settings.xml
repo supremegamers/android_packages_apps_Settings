@@ -55,17 +55,16 @@
         settings:allowDividerBelow="true"
         settings:controller="com.android.settings.display.darkmode.DarkModeActivationPreferenceController"/>
 
-    <!--<lineageos.preference.LineageSystemSettingSwitchPreference
-        android:key="berry_black_theme"
-        android:title="@string/berry_black_theme_title"
-        android:summary="@string/berry_black_theme_summary"
-        android:defaultValue="false" /> -->
+    <ListPreference
+        android:key="android.theme.customization.custom_overlays"
+        android:title="@string/theme_customization_systemui_title"
+        settings:keywords="@string/keywords_dark_ui_mode"/>
 
     <com.android.settingslib.widget.FooterPreference
-            android:key="dark_ui_footer"
-            android:title="@string/dark_ui_text"
-            android:selectable="false"
-            settings:searchable="false"
-            settings:allowDividerAbove="true"/>
+        android:key="dark_ui_footer"
+        android:title="@string/dark_ui_text"
+        android:selectable="false"
+        settings:searchable="false"
+        settings:allowDividerAbove="true"/>
 
 </PreferenceScreen>

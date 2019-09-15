@@ -101,4 +101,6 @@
     <string name="battery_temp_title">Battery temperature</string>
     <string name="battery_temp_summary">Tap to switch scale</string>
 
+    <!-- Themes customization -->
+    <string name="theme_customization_systemui_title">Color bucket</string>
 </resources>
