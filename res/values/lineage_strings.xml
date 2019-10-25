@@ -66,4 +66,7 @@
     <string name="show_qs_on_secure_keyguard_title">Quick settings</string> 
     <string name="show_qs_on_secure_keyguard_summary">Allow toggling quick settings on secure lockscreen</string>
 
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tap to show info</string>
+
 </resources>
