@@ -59,4 +59,7 @@
     <string name="smart_cutoff_level_title">Stop trigger level</string>
     <string name="smart_cutoff_resume_level_title">Start trigger level</string>
 
+    <string name="notification_sound_vib_screen_on_title">Notification sound if active</string>
+    <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+
 </resources>
