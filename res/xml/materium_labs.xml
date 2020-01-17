@@ -42,7 +42,18 @@
          android:title="@string/data_disabled_icon_title"
          android:summary="@string/data_disabled_icon_summary"
          android:defaultValue="true"/>
+      
+    <com.android.settings.widget.preferences.SystemSettingSwitchPreference
+        android:key="clock_show_status_area"
+        android:title="@string/clock_show_status_area"
+        android:summary="@string/clock_show_status_area_summary"
+        android:defaultValue="true" />
 
+    <Preference
+            android:key="ticker_settings"
+            android:title="@string/ticker_screen_title"
+            android:summary="@string/ticker_screen_summary"
+            android:fragment="com.android.settings.Ticker"/>
 
     <!-- Screen off animation -->
     <com.android.settings.widget.preferences.SystemSettingListPreference
@@ -53,11 +64,6 @@
         android:entryValues="@array/screen_off_animation_values"
         android:defaultValue="0" />
     
-    <Preference
-        android:key="qs_column_rows_settings"
-        android:title="@string/qs_column_rows_settings_title"
-        android:fragment="com.android.settings.display.QsColumnsRowsFragment"/>
-
     <PreferenceCategory
           android:key="materium_nshade_options"
           android:title="@string/materium_nshade_category_title" >
@@ -68,17 +74,16 @@
             android:summary="@string/notification_guts_kill_app_button_summary"
             android:defaultValue="false" />
 
-        <Preference
-            android:key="ticker_settings"
-            android:title="@string/ticker_screen_title"
-            android:summary="@string/ticker_screen_summary"
-            android:fragment="com.android.settings.Ticker"/>
-
         <com.android.settings.widget.preferences.SystemSettingSwitchPreference
             android:key="dismiss_all_button"
             android:title="@string/enable_clear_all_button"
             android:summary="@string/enable_clear_all_button_summary"
             android:defaultValue="false" />
+
+        <Preference
+            android:key="qs_column_rows_settings"
+            android:title="@string/qs_column_rows_settings_title"
+            android:fragment="com.android.settings.display.QsColumnsRowsFragment"/>
 
     </PreferenceCategory>
     

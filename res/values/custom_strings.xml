@@ -340,5 +340,8 @@
     <string name="screen_off_animation_title">Screen off animation</string>
     <string name="screen_off_animation_fade">Simple fade</string>
     <string name="screen_off_animation_crt">CRT</string>
-    <string name="screen_off_animation_scale">Scale</string>
+
+    <!-- cLock status area -->
+    <string name="clock_show_status_area">Clock status area</string>
+    <string name="clock_show_status_area_summary">Show the extra row of info under the lock clock(SysUI restart may be required)</string>   <string name="screen_off_animation_scale">Scale</string>
 </resources>
