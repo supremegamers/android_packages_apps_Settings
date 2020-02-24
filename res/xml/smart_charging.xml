@@ -21,12 +21,12 @@
     android:key="smart_charging_screen"
     android:title="@string/smart_charging_title">
 
-    <com.legion.settings.preferences.SystemSettingSwitchPreference
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
         android:key="smart_charging"
         android:title="@string/smart_charging_switch_title"
         android:defaultValue="false" />
 
-    <com.legion.settings.preferences.CustomSeekBarPreference
+    <com.sakura.settings.preferences.CustomSeekBarPreference
         android:key="smart_charging_level"
         android:title="@string/smart_charging_level_title"
         android:max="100"
@@ -35,16 +35,16 @@
         android:defaultValue="80"
         android:dependency="smart_charging" />
 
-    <com.legion.settings.preferences.CustomSeekBarPreference
+    <com.sakura.settings.preferences.CustomSeekBarPreference
         android:key="smart_charging_resume_level"
         android:title="@string/smart_charging_resume_level_title"
         android:max="99"
-        settings:min="15"
+        settings:min="1"
         settings:units="%"
         android:defaultValue="60"
         android:dependency="smart_charging" />
 
-    <com.legion.settings.preferences.SystemSettingSwitchPreference
+    <com.sakura.settings.preferences.SystemSettingSwitchPreference
         android:key="smart_charging_reset_stats"
         android:title="@string/smart_charging_reset_stats_title"
         android:summary="@string/smart_charging_reset_stats_summary"
