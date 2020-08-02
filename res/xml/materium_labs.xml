@@ -42,7 +42,14 @@
          android:title="@string/data_disabled_icon_title"
          android:summary="@string/data_disabled_icon_summary"
          android:defaultValue="true"/>
-      
+
+    <com.abc.support.preferences.SecureSettingSwitchPreference
+	    android:key="statusbar_clock_hidden_by_home"
+	    android:title="@string/status_bar_clock_hide_on_home_title"
+            android:summary="@string/status_bar_clock_hide_on_home_summary"
+            android:dependency="status_bar_show_clock"
+            android:defaultValue="false" />
+
     <com.android.settings.widget.preferences.SystemSettingSwitchPreference
         android:key="clock_show_status_area"
         android:title="@string/clock_show_status_area"

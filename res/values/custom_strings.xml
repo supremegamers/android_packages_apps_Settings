@@ -349,4 +349,8 @@
     <!-- Navbar tuner -->
     <string name="navbar_tuner_title">Navbar tuner</string>
     <string name="navbar_tuner_summary">Customize navbar tuner</string>
+
+    <!-- Hide clock on home screen -->
+    <string name="status_bar_clock_hide_on_home_title">Hide on Home</string>
+    <string name="status_bar_clock_hide_on_home_summary">Hide clock when Home is showing</string>
 </resources>
