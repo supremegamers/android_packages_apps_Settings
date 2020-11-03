@@ -162,4 +162,10 @@
     <!-- FastCharge feature -->
     <string name="fast_charging_title">Fast charging</string>
     <string name="fast_charging_summary">Disable to reduce the heat produced by the device while charging or to extend the lifespan of the battery</string>
+
+    <!-- Sakura version -->
+    <string name="sakura_version">Sakura Version</string>
+
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
 </resources>

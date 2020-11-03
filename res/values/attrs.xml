@@ -170,6 +170,14 @@
         <attr name="android:drawable" />
     </declare-styleable>
 
+    <!-- Interval seekbar -->
+    <declare-styleable name="IntervalSeekBar">
+        <attr name="minI" format="float" />
+        <attr name="maxI" format="float" />
+        <attr name="defaultValuePure" format="float" />
+        <attr name="digits" format="integer" />
+    </declare-styleable>
+
     <attr name="twoStateButtonPreferenceStyle" format="reference" />
 
     <attr name="fingerprint_layout_theme" format="reference" />
