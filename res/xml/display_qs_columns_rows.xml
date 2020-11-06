@@ -16,6 +16,11 @@
     android:key="qs_column_rows_settings_screen"
     android:title="@string/qs_column_rows_settings_title">
 
+    <com.abc.support.preferences.SystemSettingSwitchPreference
+        android:key="qs_tile_title_visibility"
+        android:title="@string/qs_tile_title_visibility_title"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="qs_columns_rows_category"
         android:title="@string/qs_columns_rows_category_title" >
