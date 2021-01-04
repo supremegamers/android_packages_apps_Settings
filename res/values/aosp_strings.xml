@@ -24,4 +24,10 @@
     <string name="aosp_security_settings_face_enroll_introduction_footer_part_2">"Looking at the phone can unlock it even when you don’t intend to. Your phone can be unlocked by someone else if it’s held up to your face.\n\nYou can require your eyes to be open for unlocking in Settings."</string>
     <string name="aosp_security_settings_face_enroll_introduction_footer_part_2_attention_not_supported">"Looking at the phone can unlock it when you don’t intend to.\n\nYour phone can be unlocked by someone else if it’s held up to your face, even if your eyes are closed."</string>
     <string name="aosp_security_settings_face_enroll_introduction_footer_part_3">Your phone can be unlocked by someone who looks a lot like you, say, an identical sibling.</string>
+
+    <!-- Navbar length -->
+    <string name="navbar_length">Gesture bar length</string>
+    <string name="short_label">Short</string>
+    <string name="long_label">Long</string>
+
 </resources>
