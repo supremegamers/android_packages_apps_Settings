@@ -180,4 +180,11 @@
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
     <string name="background_processes_settings_title">Background processes</string>
 
+    <!-- device name in about phone -->
+    <string name="about_device_name">Device</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">This will reset battery history stats. Would you like to continue?</string>
+
 </resources>

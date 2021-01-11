@@ -166,14 +166,8 @@ public class BatteryHeaderPreferenceController extends BasePreferenceController
 
     @VisibleForTesting
     void showHelpMessage() {
-        final LinearLayout batteryInfoLayout =
-                mBatteryLayoutPref.findViewById(R.id.battery_info_layout);
-        // Remove battery meter icon
         mBatteryMeterView.setVisibility(View.GONE);
         // Update the width of battery info layout
-        final ViewGroup.LayoutParams params = batteryInfoLayout.getLayoutParams();
-        params.width = LinearLayout.LayoutParams.WRAP_CONTENT;
-        batteryInfoLayout.setLayoutParams(params);
         mBatteryPercentText.setText(mContext.getText(R.string.unknown));
         // Add linkable text for learn more
         final Intent helpIntent = HelpUtils.getHelpIntent(mContext,
