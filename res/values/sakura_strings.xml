@@ -85,4 +85,11 @@
     <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
     <string name="ringtone2_title">Phone ringtone - SIM 2</string>
 
+    <!-- Smart cutoff -->
+    <string name="smart_cutoff_title">Smart Cutoff</string>
+    <string name="smart_cutoff_summary">Set maximum Temperature</string>
+    <string name="smart_cutoff_switch_title">Use Smart cutoff</string>
+    <string name="smart_cutoff_level_title">Stop trigger level</string>
+    <string name="smart_cutoff_resume_level_title">Start trigger level</string>
+
 </resources>

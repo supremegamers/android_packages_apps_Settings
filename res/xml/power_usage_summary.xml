@@ -56,6 +56,13 @@
         android:key="perf_profile_settings"
         lineage:replacesKey="battery_saver_summary" />
 
+    <Preference
+        android:fragment="com.android.settings.fuelgauge.smartcutoff.SmartCutoffSettings"
+        android:key="smart_cutoff_key"
+        android:title="@string/smart_cutoff_title"
+        android:summary="@string/smart_cutoff_summary"
+        settings:allowDividerAbove="true" />
+
     <SwitchPreference
         android:key="battery_percentage"
         android:title="@string/battery_percentage"
