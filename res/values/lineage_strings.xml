@@ -51,4 +51,12 @@
     <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
     <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
     <string name="qs_tile_title_visibility_title">Show tiles title</string>
+
+    <!-- Smart cutoff -->
+    <string name="smart_cutoff_title">Smart cutoff</string> 
+    <string name="smart_cutoff_summary">Set maximum temperature</string>
+    <string name="smart_cutoff_switch_title">Use Smart cutoff</string>
+    <string name="smart_cutoff_level_title">Stop trigger level</string>
+    <string name="smart_cutoff_resume_level_title">Start trigger level</string>
+
 </resources>

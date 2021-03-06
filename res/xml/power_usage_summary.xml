@@ -64,6 +64,13 @@
         android:summary="@string/smart_charging_summary"
         settings:allowDividerAbove="true" />
 
+    <Preference
+        android:fragment="com.android.settings.fuelgauge.smartcutoff.SmartCutoffSettings"
+        android:key="smart_cutoff_key"
+        android:title="@string/smart_cutoff_title"
+        android:order="6"
+        android:summary="@string/smart_cutoff_summary" />
+
     <SwitchPreference
         android:key="battery_percentage"
         android:title="@string/battery_percentage"
