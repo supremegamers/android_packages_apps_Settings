@@ -16,4 +16,9 @@
   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
   android:title="@string/naterium_labs">
 
+<Preference
+            android:key="omnijaws_settings"
+            android:title="@string/weather_title"
+            android:summary="@string/weather_summary"
+            android:fragment="com.android.settings.fragments.OmniJawsSettings" />
 </PreferenceScreen>
