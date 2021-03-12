@@ -83,11 +83,11 @@
         android:summary="@string/fast_charging_summary"
         settings:controller="com.android.settings.fuelgauge.FastChargingPreferenceController"/>
 
-    <com.derp.support.preference.SystemSettingSwitchPreference
-        android:key="sensor_block"
+    <Preference
+        android:key="sensor_block_settings"
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"
-        android:defaultValue="false" />
+        android:fragment="com.android.settings.applications.sensors.SensorBlock"/>
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="last_full_charge"
