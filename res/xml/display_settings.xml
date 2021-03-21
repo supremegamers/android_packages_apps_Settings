@@ -62,7 +62,8 @@
         lineage:requiresConfig="@*lineageos.platform:bool/config_enableLiveDisplay" />
 
     <com.android.settingslib.RestrictedPreference
-        android:key="wallpaper"
+	android:key="wallpaper"
+	android:icon="@drawable/ic_settings_themes"
         android:title="@string/wallpaper_settings_title"
         settings:keywords="@string/keywords_display_wallpaper"
         settings:useAdminDisabledSummary="true"
