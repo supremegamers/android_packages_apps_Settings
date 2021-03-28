@@ -340,4 +340,9 @@
     <string name="gaming_mode_danmaku_speed_vertical_title">Danmaku speed (vertical)</string>
     <string name="gaming_mode_danmaku_blacklist">Blacklist</string>
 
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_fade">Simple fade</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
 </resources>

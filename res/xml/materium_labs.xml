@@ -43,6 +43,16 @@
          android:summary="@string/data_disabled_icon_summary"
          android:defaultValue="true"/>
 
+
+    <!-- Screen off animation -->
+    <com.android.settings.widget.preferences.SystemSettingListPreference
+        android:key="screen_off_animation"
+        android:icon="@drawable/ic_fullscreen_exit"
+        android:title="@string/screen_off_animation_title"
+        android:entries="@array/screen_off_animation_entries"
+        android:entryValues="@array/screen_off_animation_values"
+        android:defaultValue="0" />
+    
     <Preference
         android:key="qs_column_rows_settings"
         android:title="@string/qs_column_rows_settings_title"
