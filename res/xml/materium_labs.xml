@@ -16,6 +16,13 @@
   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
   android:title="@string/naterium_labs">
 
+    <!-- Gaming mode -->
+    <Preference
+            android:key="gaming_category"
+            android:title="@string/gaming_title" 
+            android:fragment="org.exthmui.settings.fragments.GamingModeSettings"
+            android:icon="@drawable/ic_settings_gaming"/>
+        
     <Preference
          android:key="omnijaws_settings"
          android:title="@string/weather_title"
