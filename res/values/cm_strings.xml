@@ -261,4 +261,9 @@
     <string name="bluetooth_timeout_summary_4hours">4 hours</string>
     <string name="bluetooth_timeout_summary_8hours">8 hours</string>
 
+      <!-- QS Header data usage -->
+      <string name="qs_datausage_title">Data usage</string>
+      <string name="qs_datausage_daily">Daily usage</string>
+      <string name="qs_datausage_monthly">Monthly usage</string>
+
 </resources>
