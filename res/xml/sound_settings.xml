@@ -165,6 +165,7 @@
     <!-- Phone ringtone for Slot2 -->
     <com.android.settings.DefaultRingtonePreference
         android:key="ringtone2"
+        android:icon="@drawable/ic_system_ringtone"  
         android:title="@string/ringtone_title"
         android:dialogTitle="@string/ringtone_title"
         android:summary="@string/summary_placeholder"
@@ -210,11 +211,13 @@
         <!-- Dial pad tones -->
         <SwitchPreference
           android:key="dial_pad_tones"
+          android:icon="@drawable/ic_dialpad"	
           android:title="@string/dial_pad_tones_title"/>
 
         <!-- Screen locking sounds -->
         <SwitchPreference
           android:key="screen_locking_sounds"
+	  android:icon="@drawable/ic_screenlock"     
           android:title="@string/screen_locking_sounds_title"/>
 
         <!-- Charging sounds -->
@@ -230,7 +233,8 @@
         <!-- Touch sounds -->
         <SwitchPreference
           android:key="touch_sounds"
-          android:title="@string/touch_sounds_title"/>
+	  android:icon="@drawable/ic_touch_sound"	
+	  android:title="@string/touch_sounds_title"/>
 
         <!-- Dock speaker plays -->
         <DropDownPreference
@@ -246,7 +250,8 @@
         <!-- Screenshot sounds -->
         <SwitchPreference
           android:key="screenshot_sounds"
-          android:title="@string/screenshot_sound_title" />
+	  android:icon="@drawable/ic_screenshot_sound"	
+	  android:title="@string/screenshot_sound_title" />
 
         <!-- Emergency tone -->
         <DropDownPreference
