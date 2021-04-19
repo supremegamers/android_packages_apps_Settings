@@ -62,4 +62,8 @@
     <string name="notification_sound_vib_screen_on_title">Notification sound if active</string>
     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
 
+    <!-- Access QS on lockscreen --> 
+    <string name="show_qs_on_secure_keyguard_title">Quick settings</string> 
+    <string name="show_qs_on_secure_keyguard_summary">Allow toggling quick settings on secure lockscreen</string>
+
 </resources>
