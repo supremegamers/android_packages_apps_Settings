@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2021 Project Sakura
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Sakura version -->
+    <string name="sakura_version">Wersja Sakury</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Sklep Google Play</string>
+    <!-- Smart charging -->
+    <string name="smart_charging_title">Inteligentne ładowanie</string>
+    <string name="smart_charging_summary">Ustaw maksymalny poziom naładowania</string>
+    <string name="smart_charging_switch_title">Użyj inteligentnego ładowania</string>
+    <string name="smart_charging_level_title">Poziom zatrzymania</string>
+    <string name="smart_charging_resume_level_title">Poziom startowy</string>
+    <string name="smart_charging_reset_stats_title">Wyczyść statystyki baterii</string>
+    <string name="smart_charging_reset_stats_summary">Wyczyść statystyki baterii po osiągnięciu poziomu naładowania określonego przez użytkownika</string>
+    <string name="smart_charging_footer">Inteligentne ładowanie pozwala Ci ustawić maksymalny poziom naładowania, aby wydłużyć życie twojej baterii</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Szybkie odblokowywanie</string>
+    <string name="unlock_quick_unlock_control_summary">Odblokuj automatycznie, po wprowadzeniu poprawnego PINu/hasła</string>
+    <string name="background_processes_settings_title">Procesy w tle</string>
+    <!-- device name in about phone -->
+    <string name="about_device_name">Urządzenie</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Wyczyść statystyki</string>
+    <string name="battery_stats_message">Spowoduje to wyzerowanie statystyk użycia baterii. Czy chcesz kontynuować?</string>
+    <!-- Back gesture height -->
+    <string name="back_height_low_label">Pełny</string>
+    <string name="back_height_high_label">Dolny</string>
+    <string name="back_options_dialog_title">Ustawienia</string>
+    <string name="back_height_message">Ilość ekranu użyta jako obszar dotykowy dla gestu wstecz</string>
+    <!-- Weather -->
+    <string name="weather_title">Pogoda</string>
+    <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Usuń istniejący skan twarzy i utwórz nowy</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Powtórz skanowanie twarzy</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">Blokada ekranu, odcisk palca, odblokowanie twarzą</string>
+    <string name="face_redo_confirm_btn">Ponów</string>
+    <string name="face_redo_warning_msg">Czy chcesz usunąć istniejący skan twarzy i utworzyć nowy?</string>
+    <!-- App Lock -->
+    <string name="applock_title">Blokada aplikacji</string>
+    <string name="applock_locked">Zablokowana</string>
+    <string name="applock_unlocked">Odblokowana</string>
+    <string name="applock_locked_apps">Zablokowane aplikacje</string>
+    <string name="applock_unlocked_apps">Odblokowane aplikacje</string>
+    <string name="applock_lock_after_title">Zablokuj aplikację po</string>
+    <string name="applock_lock_after_instantly">Natychmiast</string>
+    <string name="applock_lock_after_15_seconds">15 Sekund</string>
+    <string name="applock_lock_after_screen_off">Po wyłączeniu ekranu</string>
+    <string name="applock_lock_after_summary">Aplikacja zostanie zablokowana po wybranym przekroczeniu czasu</string>
+    <string name="applock_lock_after_instantly_summary">Aplikacja zostanie zablokowana natychmiast po zamknięciu</string>
+    <string name="applock_lock_after_15_seconds_summary">Aplikacja zostanie zablokowana 15 sekund po zamknięciu</string>
+    <string name="applock_lock_after_screen_off_summary">Aplikacja zostanie zablokowana po wyłączeniu ekranu</string>
+    <string name="applock_notification_info">Możesz pokazać/ukryć zawartość powiadomień dla każdej aplikacji klikając ikonę powiadomień wyświetlaną na każdej zablokowanej aplikacji</string>
+    <string name="applock_show_notif">Pokazuj całą treść powiadomień</string>
+    <string name="applock_hide_notif">Ukryj treść powiadomień</string>
+    <string name="applock_setup">Ustaw blokadę aplikacji</string>
+    <string name="applock_overlay_summary">Ta funkcja nie jest dostępna, ponieważ ta aplikacja jest zablokowana</string>
+    <plurals name="applock_summary">
+        <item quantity="one">Aplikacja zablokowana</item>
+        <item quantity="few">Zablokowano %d aplikacji</item>
+        <item quantity="many">Zablokowano %d aplikacji</item>
+        <item quantity="other">%d zablokowanych aplikacji</item>
+    </plurals>
+    <string name="keywords_applock_settings">applock, applocker, blokada aplikacji, blokader aplikacji</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">Dzwonek telefonu dla karty SIM 1</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">Dzwonek telefonu dla karty SIM 2</string>
+    <!-- Smart cutoff -->
+    <string name="smart_cutoff_title">Inteligentne odcięcie</string>
+    <string name="smart_cutoff_summary">Ustaw maksymalną temperaturę</string>
+    <string name="smart_cutoff_switch_title">Użyj inteligentnego odcięcia</string>
+    <string name="smart_cutoff_level_title">Poziom zatrzymania</string>
+    <string name="smart_cutoff_resume_level_title">Poziom rozpoczęcia</string>
+</resources>

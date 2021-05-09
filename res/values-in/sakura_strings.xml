@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2021 Project Sakura
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Sakura version -->
+    <string name="sakura_version">Versi Sakura</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <!-- Smart charging -->
+    <string name="smart_charging_title">Pengisian Pintar</string>
+    <string name="smart_charging_summary">Atur batas maksimum pengisian</string>
+    <string name="smart_charging_switch_title">Gunakan Pengisian Pintar</string>
+    <string name="smart_charging_level_title">Akhir level pemicu</string>
+    <string name="smart_charging_resume_level_title">Mulai level pemicu</string>
+    <string name="smart_charging_reset_stats_title">Atur ulang statistik baterai</string>
+    <string name="smart_charging_reset_stats_summary">Atur ulang statistik baterai setelah mencapai batas pengisian</string>
+    <string name="smart_charging_footer">Pengisian Pintar memungkinkan Anda mengatur tingkat pengisian maksimum untuk memperpanjang umur baterai Anda</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Membuka kunci dengan cepat</string>
+    <string name="unlock_quick_unlock_control_summary">Membuka secara otomatis ketika PIN/kata sandi yang dimasukkan benar</string>
+    <string name="background_processes_settings_title">Proses di latar belakang</string>
+    <!-- device name in about phone -->
+    <string name="about_device_name">Perangkat</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Atur ulang statistik</string>
+    <string name="battery_stats_message">Ini akan mengatur ulang statistik riwayat baterai. Apakah Anda ingin melanjutkan?</string>
+    <!-- Back gesture height -->
+    <string name="back_height_low_label">Penuh</string>
+    <string name="back_height_high_label">Bawah</string>
+    <string name="back_options_dialog_title">Pilihan</string>
+    <string name="back_height_message">Jumlah ketinggian layar yang digunakan sebagai daerah yang dapat disentuh untuk gerakan kembali</string>
+    <!-- Weather -->
+    <string name="weather_title">Cuaca</string>
+    <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Hapus pemindaian wajah yang sudah ada dan buat pemindaian baru</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Ulangi pemindaian wajah</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">Layar kunci, sidik jari, buka kunci dengan wajah</string>
+    <string name="face_redo_confirm_btn">Ulangi</string>
+    <string name="face_redo_warning_msg">Apakah Anda ingin menghapus pemindaian wajah yang sudah ada dan membuat pemindaian baru?</string>
+    <!-- App Lock -->
+    <string name="applock_title">Pengunci Aplikasi</string>
+    <string name="applock_locked">Terkunci</string>
+    <string name="applock_unlocked">Tidak terkunci</string>
+    <string name="applock_locked_apps">Aplikasi terkunci</string>
+    <string name="applock_unlocked_apps">Aplikasi tidak terkunci</string>
+    <string name="applock_lock_after_title">Kunci aplikasi setelah</string>
+    <string name="applock_lock_after_instantly">Segera</string>
+    <string name="applock_lock_after_15_seconds">15 Detik</string>
+    <string name="applock_lock_after_screen_off">Layar mati</string>
+    <string name="applock_lock_after_summary">Aplikasi akan dikunci setelah waktu habis yang dipilih</string>
+    <string name="applock_lock_after_instantly_summary">Aplikasi akan langsung dikunci saat ditutup</string>
+    <string name="applock_lock_after_15_seconds_summary">Aplikasi akan dikunci 15 detik setelah ditutup</string>
+    <string name="applock_lock_after_screen_off_summary">Aplikasi akan dikunci saat layar dimatikan</string>
+    <string name="applock_notification_info">Anda dapat menampilkan/menyembunyikan konten notifikasi per aplikasi dengan mengklik ikon notifikasi yang ditampilkan di preferensi setiap aplikasi yang terkunci</string>
+    <string name="applock_show_notif">Menampilkan konten notifikasi</string>
+    <string name="applock_hide_notif">Menyembunyikan konten notifikasi</string>
+    <string name="applock_setup">Siapkan pengunci aplikasi</string>
+    <string name="applock_overlay_summary">Fitur ini tidak tersedia karena aplikasi ini terkunci</string>
+    <plurals name="applock_summary">
+        <item quantity="other">%d aplikasi terkunci</item>
+    </plurals>
+    <string name="keywords_applock_settings">kunci aplikasi, pengunci aplikasi</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">Nada dering telepon - SIM 1</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">Nada dering telepon - SIM 2</string>
+    <!-- Smart cutoff -->
+    <string name="smart_cutoff_title">Pemotong Cerdas</string>
+    <string name="smart_cutoff_summary">Atur suhu maksimum</string>
+    <string name="smart_cutoff_switch_title">Gunakan Pemotong Cerdas</string>
+    <string name="smart_cutoff_level_title">Akhir level pemicu</string>
+    <string name="smart_cutoff_resume_level_title">Mulai level pemicu</string>
+</resources>
