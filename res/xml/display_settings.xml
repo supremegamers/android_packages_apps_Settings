@@ -233,8 +233,14 @@
         android:title="@string/qs_bg_use_new_tint"
         android:summary="@string/qs_bg_use_new_tint_summary"
         android:defaultValue="true" />
+    
+    <com.android.settings.widget.preferences.SystemSettingSwitchPreference
+        android:key="notification_guts_kill_app_button"
+        android:title="@string/notification_guts_kill_app_button_title"
+        android:summary="@string/notification_guts_kill_app_button_summary"
+        android:defaultValue="false" />
 
-     <Preference
+    <Preference
         android:key="vr_display_pref"
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
