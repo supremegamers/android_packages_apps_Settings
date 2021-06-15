@@ -84,4 +84,15 @@
     <string name="smart_cutoff_switch_title">Akıllı kesmeyi kullan</string>
     <string name="smart_cutoff_level_title">Durmayı tetikleme seviyesi</string>
     <string name="smart_cutoff_resume_level_title">Başlamayı tetikleme seviyesi</string>
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Pil sıcaklığı</string>
+    <string name="battery_temp_summary">Ölçeği değiştirmek için dokunun</string>
+    <!-- Themes customization -->
+    <string name="theme_customization_systemui_title">Renk seçici</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">Yazı tipi</string>
+    <string name="disable_fonts_installed_title">Substratum ile çakışmaları önlemek için yazı tipi seçici kullanılamıyor. Yazı tipi seçicisini kullanmak isterseniz bunları kaldırın.</string>
+    <string name="font_picker_progress">Yeni yazı tipi uygulanıyor\u2026</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Bilgi göstermek için dokunun</string>
 </resources>

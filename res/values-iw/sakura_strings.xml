@@ -86,4 +86,15 @@
     <string name="smart_cutoff_switch_title">השתמש בניתוק חכם מהחשמל</string>
     <string name="smart_cutoff_level_title">הטמפרטורה בה הניתוק ייפסק</string>
     <string name="smart_cutoff_resume_level_title">הטמפרטורה בה הניתוק יחל</string>
+    <!-- Battery temp -->
+    <string name="battery_temp_title">טמפרטורת הסוללה</string>
+    <string name="battery_temp_summary">הקש כדי להחליף סולם</string>
+    <!-- Themes customization -->
+    <string name="theme_customization_systemui_title">דלי הצבעים</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">גופן</string>
+    <string name="disable_fonts_installed_title">דוגם הגופנים אינו זמין כדי להימנע מהתנגשויות עם Substratum. הסר את ההתקנה של האפליקציה אם ברצונך להשתמש בדוגם הגופנים.</string>
+    <string name="font_picker_progress">מחיל גופן חדש\u2026</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">הקש כדי להציג מידע</string>
 </resources>
