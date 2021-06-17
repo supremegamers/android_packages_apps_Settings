@@ -193,4 +193,11 @@
     <string name="alarm_blocker_reload">Reload</string>
     <string name="alarm_blocker_warning_title">Proceed with caution</string>
     <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
+
+    <!-- Accent QS tint -->
+    <string name="qs_bg_use_new_tint">Tint QS tiles</string>
+    <string name="qs_bg_use_new_tint_summary">Choose the QS Tint Style</string>
+    <string name="qs_tint_off">Default</string>
+    <string name="qs_tint_accent">Accent Color</string>
+    <string name="qs_tint_oos">OxygenOS 11</string>
 </resources>
