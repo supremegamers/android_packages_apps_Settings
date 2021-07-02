@@ -223,6 +223,7 @@
         <!-- Charging sounds -->
         <SwitchPreference
           android:key="charging_sounds"
+          android:icon="@drawable/ic_system_vibrate"
           android:title="@string/charging_sounds_title"/>
 
         <!-- Docking sounds -->
