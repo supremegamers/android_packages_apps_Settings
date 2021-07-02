@@ -254,6 +254,12 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         if (!getResources().getBoolean(R.bool.config_deviceSupportSmartCharging)) {
             getPreferenceScreen().removePreference(mSmartCharging);
         }
+
+        Preference mSmartCutoff = (Preference) findPreference("smart_cutoff_key");
+        if (!getResources().getBoolean(R.bool.config_deviceSupportSmartCutoff)) {
+            getPreferenceScreen().removePreference(mSmartCutoff);
+        }
+
     }
 
     @Override
