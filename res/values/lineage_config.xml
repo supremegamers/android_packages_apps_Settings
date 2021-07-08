@@ -39,7 +39,7 @@
     <bool name="config_supportBatteryHealth">false</bool>
 
     <!-- Smart Charging -->
-    <bool name="config_supportSmartCharging">false</bool>
+    <bool name="config_supportSmartCharging">true</bool>
 
     <!-- Whether to show or hide sensitive info (like IMEI and Phone Number) on About phone -->
     <bool name="configShowDeviceSensitiveInfo">false</bool>
