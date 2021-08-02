@@ -235,4 +235,11 @@
     <string name="profile_choose_app">Choose app</string>
     <string name="dialog_delete_message">Remove selected item?</string>
     <string name="dialog_delete_title">Delete</string>
+
+    <!-- Edge lightning -->
+    <string name="edge_lighting_category_title">Edge lighting</string>
+    <string name="pulse_ambient_light_title">Pulse light notification</string>
+    <string name="pulse_ambient_light_summary">Show light bar on notification pulse</string>
+    <string name="ambient_notification_light_enabled_title">Always on ambient lights on notification</string>
+    <string name="ambient_notification_light_enabled_sumary">Show Always On light bars when receiving a notification</string>
 </resources>
