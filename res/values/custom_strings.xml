@@ -200,4 +200,21 @@
     <string name="qs_tint_off">Default</string>
     <string name="qs_tint_accent">Accent Color</string>
     <string name="qs_tint_oos">OxygenOS 11</string>
+    
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G icon</string>
+    <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
+
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Show data disabled icon</string>
+    <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
+
+    <!-- QS tile tint -->
+    <string name="qs_bg_use_new_tint">Tint QS tiles using accent color</string>
+    <string name="qs_bg_use_new_tint_summary">Enable the accent color tint on the QS tiles</string>
+
+    <!-- OOS clear all button -->
+    <string name="enable_clear_all_button">OOS clear buttons</string>
+    <string name="enable_clear_all_button_summary">Show clear all notifications button in quick settings instead of default text one</string>
+
 </resources>
