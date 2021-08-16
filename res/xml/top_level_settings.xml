@@ -118,6 +118,14 @@
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
     <Preference
+        android:key="top_level_materium"
+        android:title="@string/materium_labs"
+        android:summary="@string/materium_labs_desc"
+        android:icon="@drawable/ic_homepage_system_dashboard"
+        android:order="-25"
+        android:fragment="com.android.settings.materium.MateriumLabs"/>
+    
+    <Preference
         android:key="top_level_accessibility"
         android:title="@string/accessibility_settings"
         android:summary="@string/accessibility_settings_summary"
