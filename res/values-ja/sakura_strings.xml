@@ -83,4 +83,44 @@
     <string name="smart_cutoff_switch_title">スマートカットオフを使用</string>
     <string name="smart_cutoff_level_title">適用停止レベル</string>
     <string name="smart_cutoff_resume_level_title">適用開始レベル</string>
+    <!-- Battery temp -->
+    <string name="battery_temp_title">バッテリー温度</string>
+    <string name="battery_temp_summary">タップして単位を変更する</string>
+    <!-- Themes customization -->
+    <string name="theme_customization_systemui_title">色のバケツ</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">フォント</string>
+    <string name="disable_fonts_installed_title">フォントピッカーは Substratum との競合のため使用できません。フォントピッカーを使用したい場合は Substratum をアンインストールして下さい。</string>
+    <string name="font_picker_progress">新しいフォントを適用中\u2026</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">タップして情報を表示</string>
+    <!-- Ambient Music -->
+    <string name="pulse_on_new_tracks_title">アンビエント音楽ティッカー</string>
+    <string name="pulse_on_new_tracks_summary">新規楽曲再生時にアンビエント表示をする</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">アダプティブ再生</string>
+    <string name="adaptive_playback_disabled_summary">OFF</string>
+    <string name="adaptive_playback_timeout_title">使用時間</string>
+    <string name="adaptive_playback_timeout_none">制限なし</string>
+    <string name="adaptive_playback_timeout_none_summary">ON (制限なし)</string>
+    <string name="adaptive_playback_timeout_30_secs">30秒</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">ON (30秒)</string>
+    <string name="adaptive_playback_timeout_1_min">1分</string>
+    <string name="adaptive_playback_timeout_1_min_summary">ON (1分)</string>
+    <string name="adaptive_playback_timeout_2_min">2分</string>
+    <string name="adaptive_playback_timeout_2_min_summary">ON (2分)</string>
+    <string name="adaptive_playback_timeout_5_min">5分</string>
+    <string name="adaptive_playback_timeout_5_min_summary">ON (5分)</string>
+    <string name="adaptive_playback_timeout_10_min">10分</string>
+    <string name="adaptive_playback_timeout_10_min_summary">ON (10分)</string>
+    <!-- Ambient Music Indicator -->
+    <string name="ambient_music_location">アンビエント音楽ティッカーを表示</string>
+    <string name="ambient_music_disabled">無効</string>
+    <string name="ambient_music_bottom">下部に表示 (既定)</string>
+    <string name="ambient_music_center">中央に表示 (cLockの下)</string>
+    <!-- Cloudflare DNS -->
+    <!-- Adguard DNS -->
+    <!-- global cleartext network traffic -->
+    <string name="cleartext_network_policy_title">未暗号化のネットワーク通信を制限</string>
+    <string name="cleartext_network_policy_summary">TLS 以外の全ての通信をブロックします。プライベート DNS 設定が必要です。注意: 除外を明示化しないと Tor やほとんどの VPN は動作しません。</string>
 </resources>

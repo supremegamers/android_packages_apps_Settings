@@ -83,4 +83,44 @@
     <string name="smart_cutoff_switch_title">Dùng Cắt thông minh</string>
     <string name="smart_cutoff_level_title">Mức dừng kích hoạt</string>
     <string name="smart_cutoff_resume_level_title">Bắt đầu mức kích hoạt</string>
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Nhiệt độ pin</string>
+    <string name="battery_temp_summary">Nhấn để thay đổi tỷ lệ</string>
+    <!-- Themes customization -->
+    <string name="theme_customization_systemui_title">Bảng chọn màu</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">Phông chữ</string>
+    <string name="disable_fonts_installed_title">Trình chọn font chữ hiện không hoạt động để tránh xung đột với substratum. Gỡ cài đặt substratum nếu bạn muốn sử dụng trình chọn font chữ.</string>
+    <string name="font_picker_progress">Áp dụng phông chữ mới\u2026</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Chạm để hiện thông tin</string>
+    <!-- Ambient Music -->
+    <string name="pulse_on_new_tracks_title">Thẻ âm nhạc trên Màn hình luôn bật</string>
+    <string name="pulse_on_new_tracks_summary">Hiển thị màn hình luôn bật khi một bản nhạc mới được phát</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Phát nhạc linh động</string>
+    <string name="adaptive_playback_disabled_summary">Tắt</string>
+    <string name="adaptive_playback_timeout_title">Sử dụng thời gian chờ của</string>
+    <string name="adaptive_playback_timeout_none">Không có thời gian chờ</string>
+    <string name="adaptive_playback_timeout_none_summary">Bật (không có thời gian chờ)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 giây</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Bật (30 giây)</string>
+    <string name="adaptive_playback_timeout_1_min">1 phút</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Bật (1 phút)</string>
+    <string name="adaptive_playback_timeout_2_min">2 phút</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Bật (2 phút)</string>
+    <string name="adaptive_playback_timeout_5_min">5 phút</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Bật (5 phút)</string>
+    <string name="adaptive_playback_timeout_10_min">10 phút</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Bật (10 phút)</string>
+    <!-- Ambient Music Indicator -->
+    <string name="ambient_music_location">Hiện thẻ âm nhạc xem nhanh</string>
+    <string name="ambient_music_disabled">Đã vô hiệu</string>
+    <string name="ambient_music_bottom">Ở dưới cùng (mặc định)</string>
+    <string name="ambient_music_center">Căn giữa (dưới đồng hồ)</string>
+    <!-- Cloudflare DNS -->
+    <!-- Adguard DNS -->
+    <!-- global cleartext network traffic -->
+    <string name="cleartext_network_policy_title">Hạn chế xóa văn bản tốc bộ mạng</string>
+    <string name="cleartext_network_policy_summary">Chặn tất cả không bảo mật tầng vận tải lưu thông mạng. Lời khuyên cấu hình DNS bảo mật. Chú ý ngoài sự rõ ràng miễn trừ, Tor và hầu hết các VPN sẽ không hoạt động</string>
 </resources>

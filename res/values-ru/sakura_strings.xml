@@ -86,4 +86,44 @@
     <string name="smart_cutoff_switch_title">Использовать умное отключение</string>
     <string name="smart_cutoff_level_title">Уровень выключения зарядки</string>
     <string name="smart_cutoff_resume_level_title">Уровень начала заряда</string>
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Температура батареи</string>
+    <string name="battery_temp_summary">Нажмите, чтобы изменить масштаб</string>
+    <!-- Themes customization -->
+    <string name="theme_customization_systemui_title">Палитра цветов</string>
+    <!-- FontEngine -->
+    <string name="font_picker_title">Шрифт</string>
+    <string name="disable_fonts_installed_title">Управление шрифтом недоступно, чтобы предотвратить конфликты с Substratum. Удалите его, если хотите и дальше использовать системное управление шрифтом.</string>
+    <string name="font_picker_progress">Применяем новый шрифт\u2026</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Нажмите, чтобы показать информацию</string>
+    <!-- Ambient Music -->
+    <string name="pulse_on_new_tracks_title">Музыкальное событие бегущей строки</string>
+    <string name="pulse_on_new_tracks_summary">Показывать на Отображении событий при воспроизведении нового музыкального трека</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Адаптивное воспроизведение</string>
+    <string name="adaptive_playback_disabled_summary">Выкл.</string>
+    <string name="adaptive_playback_timeout_title">Использовать время ожидания</string>
+    <string name="adaptive_playback_timeout_none">Без времени ожидания</string>
+    <string name="adaptive_playback_timeout_none_summary">Вкл (без ожидания)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 секунд</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Вкл. (30 секунд)</string>
+    <string name="adaptive_playback_timeout_1_min">1 минута</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Вкл. (1 минута)</string>
+    <string name="adaptive_playback_timeout_2_min">2 минуты</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Вкл (2 минуты)</string>
+    <string name="adaptive_playback_timeout_5_min">5 минут</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Вкл (5 минут)</string>
+    <string name="adaptive_playback_timeout_10_min">10 минут</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Вкл (10 минут)</string>
+    <!-- Ambient Music Indicator -->
+    <string name="ambient_music_location">Показывать \"Сейчас играет\"</string>
+    <string name="ambient_music_disabled">Отключено</string>
+    <string name="ambient_music_bottom">Снизу (по умолчанию)</string>
+    <string name="ambient_music_center">По центру (под часами)</string>
+    <!-- Cloudflare DNS -->
+    <!-- Adguard DNS -->
+    <!-- global cleartext network traffic -->
+    <string name="cleartext_network_policy_title">Ограничение сетевого трафика с открытым текстом</string>
+    <string name="cleartext_network_policy_summary">Блокирует весь сетевой трафик, не связанный с TLS. Требуется частная конфигурация DNS. Примечание: Без явных исключений Tor и большинство VPN не будут работать</string>
 </resources>
