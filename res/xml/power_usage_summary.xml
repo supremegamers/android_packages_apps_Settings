@@ -51,17 +51,20 @@
     <!-- Battery light -->
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="battery_lights"
+        android:icon="@drawable/ic_batt_light"
         lineage:requiresConfig="@*lineageos.platform:integer/config_deviceLightCapabilities"
         lineage:requiresConfigMask="64" />
 
     <!-- Custom perf profiles settings -->
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="perf_profile_settings"
+        android:icon="@drawable/ic_batt_saver"
         lineage:replacesKey="battery_saver_summary" />
 
     <Preference
         android:fragment="com.android.settings.fuelgauge.smartcharging.SmartChargingSettings"
         android:key="smart_charging_key"
+	android:icon="@drawable/ic_smart_charging"
         android:title="@string/smart_charging_title"
         android:summary="@string/smart_charging_summary"
         settings:allowDividerAbove="true" />
@@ -69,6 +72,7 @@
     <Preference
         android:fragment="com.android.settings.fuelgauge.smartcutoff.SmartCutoffSettings"
         android:key="smart_cutoff_key"
+	android:icon="@drawable/ic_smart_cutoff"
         android:title="@string/smart_cutoff_title"
         android:order="6"
         android:summary="@string/smart_cutoff_summary" />
@@ -107,21 +111,25 @@
 		
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="battery_temp"
+        android:icon="@drawable/ic_batt_temp"
         android:title="@string/battery_temp"
         android:selectable="false" />
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="designed_battery_capacity"
+        android:icon="@drawable/ic_batt_cap"
         android:title="@string/designed_battery_capacity"
         android:selectable="false" />
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="current_battery_capacity"
+        android:icon="@drawable/ic_batt_cap"
         android:title="@string/current_battery_capacity"
         android:selectable="false" />
 
     <com.android.settings.fuelgauge.PowerGaugePreference 
-        android:key="battery_charge_cycles" 
+        android:key="battery_charge_cycles"
+        android:icon="@drawable/ic_batt_cap" 
         android:title="@string/battery_charge_cycles"
         android:selectable="false" />
 

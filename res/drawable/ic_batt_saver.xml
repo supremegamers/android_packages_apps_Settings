@@ -10,5 +10,5 @@
 
     <path
         android:fillColor="?android:attr/colorControlNormal"
-        android:pathData="M22,13h-9v9H2L22,2V13z M21,15.41L19.59,14l-2.09,2.09L15.41,14L14,15.41l2.09,2.09L14,19.59L15.41,21l2.09-2.08L19.59,21 L21,19.59l-2.08-2.09L21,15.41z" />
+        android:pathData="M16,4h-2V2h-4v2H8C7.45,4,7,4.45,7,5v16c0,0.55,0.45,1,1,1h8c0.55,0,1-0.45,1-1V5C17,4.45,16.55,4,16,4z M15,14h-2v2h-2 v-2H9v-2h2v-2h2v2h2V14z" />
 </vector>
