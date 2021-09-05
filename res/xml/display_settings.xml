@@ -181,6 +181,7 @@
     <!-- Prevent accidental wake-up -->
     <lineageos.preference.LineageSystemSettingSwitchPreference
         android:key="proximity_on_wake"
+        android:icon="@drawable/ic_acc_wake"
         android:title="@string/proximity_wake_title"
         android:summary="@string/proximity_wake_summary"
         android:defaultValue="@*lineageos.platform:bool/config_proximityCheckOnWakeEnabledByDefault"
