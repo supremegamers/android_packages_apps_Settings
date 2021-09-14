@@ -294,10 +294,6 @@
     
     <!-- Gaming mode -->
     <string name="gaming_title">Gaming mode</string>
-
-    <string name="profile_choose_app">Choose app</string>
-    <string name="dialog_delete_title">Delete</string>
-    <string name="dialog_delete_message">Remove selected item?</string>
     <string name="add_package_to_title">Add application</string>
 
     <string name="gaming_mode_enabled_title">Enable gaming mode</string>

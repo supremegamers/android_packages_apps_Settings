@@ -122,7 +122,7 @@
 
     </PreferenceCategory>
 
-    <com.android.settings.widget.preferences.PackageListPreference
+    <org.exthmui.settings.preferences.PackageListPreference
         android:key="gaming_mode_app_list"
         android:title="@string/gaming_mode_apps"
         android:dependency="gaming_mode_enabled" />
