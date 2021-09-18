@@ -58,8 +58,8 @@
     <!-- Custom perf profiles settings -->
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="perf_profile_settings"
-        android:icon="@drawable/ic_batt_saver"
-        lineage:replacesKey="battery_saver_summary" />
+        android:icon="@drawable/ic_acc_wake"
+      android:title="@string/perf_profiles" />
 
     <Preference
         android:fragment="com.android.settings.fuelgauge.smartcharging.SmartChargingSettings"
