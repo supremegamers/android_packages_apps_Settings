@@ -271,6 +271,7 @@
     <string name="materium_labs">Labs</string>
     <string name="materium_labs_desc">This is where you craft your Materium!</string>
     <string name="materium_nshade_category_title">Notification shade</string>
+    <string name="materium_statusbar_category_title">Statusbar</string>
 
     <!-- Omni Jaws -->
     <string name="weather_title">Weather</string>

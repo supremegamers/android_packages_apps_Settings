@@ -30,6 +30,33 @@
          android:fragment="com.android.settings.fragments.OmniJawsSettings" />
 
     <com.android.settings.widget.preferences.SystemSettingSwitchPreference
+        android:key="clock_show_status_area"
+        android:title="@string/clock_show_status_area"
+        android:summary="@string/clock_show_status_area_summary"
+        android:defaultValue="true" />
+
+    <!-- Screen off animation -->
+    <com.android.settings.widget.preferences.SystemSettingListPreference
+        android:key="screen_off_animation"
+        android:icon="@drawable/ic_fullscreen_exit"
+        android:title="@string/screen_off_animation_title"
+        android:entries="@array/screen_off_animation_entries"
+        android:entryValues="@array/screen_off_animation_values"
+        android:defaultValue="0" />
+
+    <Preference
+            android:title="@string/navbar_tuner_title"
+            android:summary="@string/navbar_tuner_summary" >
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.NavBarActivity" />
+    </Preference>   
+    
+    <PreferenceCategory
+          android:key="materium_statusbar_options"
+	  android:title="@string/materium_statusbar_category_title" >
+
+    <com.android.settings.widget.preferences.SystemSettingSwitchPreference
          android:key="show_fourg_icon"
          android:icon="@drawable/ic_show_4g"
          android:title="@string/show_fourg_icon_title"
@@ -50,34 +77,13 @@
             android:dependency="status_bar_show_clock"
             android:defaultValue="false" />
 
-    <com.android.settings.widget.preferences.SystemSettingSwitchPreference
-        android:key="clock_show_status_area"
-        android:title="@string/clock_show_status_area"
-        android:summary="@string/clock_show_status_area_summary"
-        android:defaultValue="true" />
-
     <Preference
             android:key="ticker_settings"
             android:title="@string/ticker_screen_title"
             android:summary="@string/ticker_screen_summary"
             android:fragment="com.android.settings.Ticker"/>
 
-    <!-- Screen off animation -->
-    <com.android.settings.widget.preferences.SystemSettingListPreference
-        android:key="screen_off_animation"
-        android:icon="@drawable/ic_fullscreen_exit"
-        android:title="@string/screen_off_animation_title"
-        android:entries="@array/screen_off_animation_entries"
-        android:entryValues="@array/screen_off_animation_values"
-        android:defaultValue="0" />
-
-    <Preference
-            android:title="@string/navbar_tuner_title"
-            android:summary="@string/navbar_tuner_summary" >
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.NavBarActivity" />
-    </Preference>   
+    </PreferenceCategory>
     
     <PreferenceCategory
           android:key="materium_nshade_options"
