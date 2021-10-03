@@ -103,13 +103,13 @@ public class SensorBlock extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.FORKLINEAGE;
+        return MetricsProto.MetricsEvent.MATERIUM;
     }
 
     @Override
     public int getDialogMetricsCategory(int dialogId) {
         if (dialogId == DIALOG_BLOCKED_APPS) {
-            return MetricsProto.MetricsEvent.FORKLINEAGE;
+            return MetricsProto.MetricsEvent.MATERIUM;
         }
         return 0;
     }

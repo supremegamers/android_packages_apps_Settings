@@ -67,6 +67,6 @@ public class Ticker extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.FORKLINEAGE;
+        return MetricsProto.MetricsEvent.MATERIUM;
     }
 }

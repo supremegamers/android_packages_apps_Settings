@@ -59,6 +59,6 @@ public class GamingModeSettings extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.FORKLINEAGE;
+        return MetricsProto.MetricsEvent.MATERIUM;
     }
 }

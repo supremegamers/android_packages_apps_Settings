@@ -220,7 +220,7 @@ public class AlarmBlocker extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.FORKLINEAGE;
+        return MetricsProto.MetricsEvent.MATERIUM;
     }
 
     private boolean isFirstEnable() {

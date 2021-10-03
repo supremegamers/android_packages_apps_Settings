@@ -58,7 +58,7 @@ public class OmniJawsSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.FORKLINEAGE;
+        return MetricsEvent.MATERIUM;
     }
 
     @Override

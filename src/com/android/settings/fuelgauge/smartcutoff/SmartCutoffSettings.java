@@ -87,7 +87,7 @@ public class SmartCutoffSettings extends DashboardFragment implements OnPreferen
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.FORKLINEAGE;
+        return MetricsEvent.MATERIUM;
     }
 
     @Override
