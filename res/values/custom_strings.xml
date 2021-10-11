@@ -109,9 +109,6 @@
     <string name="qs_datausage_daily">Daily usage</string>
     <string name="qs_datausage_monthly">Monthly usage</string>
 
-    <!-- StellarOS Version -->
-    <string name="stellar_version">StellarOS Version</string>
-
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Adaptive playback</string>
     <string name="adaptive_playback_disabled_summary">Off</string>
@@ -174,6 +171,8 @@
 
     <!-- Settings version info -->
     <string name="materium_version">Materium version</string>
+    <string name="materium_maintainer">Unknown</string>
+    <string name="materium_maintainer_title">Device maintainer</string>
 
     <!-- Notification guts kill app button -->
     <string name="notification_guts_kill_app_button_title">Kill app button</string>
