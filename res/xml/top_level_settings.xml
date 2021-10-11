@@ -118,12 +118,12 @@
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
     <Preference
-        android:key="top_level_materium"
-        android:title="@string/materium_labs"
-        android:summary="@string/materium_labs_desc"
-        android:icon="@drawable/ic_homepage_materium"
+        android:key="top_level_kasumi"
+        android:title="@string/kasumi_labs"
+        android:summary="@string/kasumi_labs_desc"
+        android:icon="@drawable/ic_homepage_kasumi"
         android:order="-25"
-        android:fragment="com.android.settings.materium.MateriumLabs"/>
+        android:fragment="com.android.settings.kasumi.KasumiLabs"/>
     
     <Preference
         android:key="top_level_accessibility"

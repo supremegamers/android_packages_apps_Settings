@@ -14,7 +14,7 @@
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-  android:title="@string/materium_labs">
+  android:title="@string/kasumi_labs">
 
     <!-- Gaming mode -->
     <Preference
@@ -53,8 +53,8 @@
     </Preference>   
     
     <PreferenceCategory
-          android:key="materium_statusbar_options"
-	  android:title="@string/materium_statusbar_category_title" >
+          android:key="kasumi_statusbar_options"
+	  android:title="@string/kasumi_statusbar_category_title" >
 
     <com.android.settings.widget.preferences.SystemSettingSwitchPreference
          android:key="show_fourg_icon"
@@ -85,8 +85,8 @@
     </PreferenceCategory>
     
     <PreferenceCategory
-          android:key="materium_nshade_options"
-          android:title="@string/materium_nshade_category_title" >
+          android:key="kasumi_nshade_options"
+          android:title="@string/kasumi_nshade_category_title" >
     
         <com.android.settings.widget.preferences.SystemSettingSwitchPreference
             android:key="notification_guts_kill_app_button"

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 Project Materium
+ * Copyright (C) 2021 Project Kasumi
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.materium;
+package com.android.settings.kasumi;
 
 import android.os.Bundle;
 
@@ -21,16 +21,16 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class MateriumLabs extends SettingsPreferenceFragment {
+public class KasumiLabs extends SettingsPreferenceFragment {
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    addPreferencesFromResource(R.xml.materium_labs);
+    addPreferencesFromResource(R.xml.kasumi_labs);
   }
 
   @Override
   public int getMetricsCategory() {
-    return MetricsProto.MetricsEvent.MATERIUM;
+    return MetricsProto.MetricsEvent.KASUMI;
   }
 }
