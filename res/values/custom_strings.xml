@@ -109,9 +109,6 @@
     <string name="qs_datausage_daily">Daily usage</string>
     <string name="qs_datausage_monthly">Monthly usage</string>
 
-    <!-- StellarOS Version -->
-    <string name="stellar_version">StellarOS Version</string>
-
     <!-- Adaptive Playback -->
     <string name="adaptive_playback_screen_title">Adaptive playback</string>
     <string name="adaptive_playback_disabled_summary">Off</string>
@@ -174,6 +171,8 @@
 
     <!-- Settings version info -->
     <string name="kasumi_version">Kasumi version</string>
+    <string name="kasumi_maintainer">Masked hero!</string>
+    <string name="kasumi_maintainer_title">Device maintainer</string>
 
     <!-- Notification guts kill app button -->
     <string name="notification_guts_kill_app_button_title">Kill app button</string>
@@ -353,4 +352,13 @@
 
     <!-- Perf profiles -->
     <string name="perf_profiles">Performance profiles</string>
+
+    <!-- Battery charge warning -->
+    <string name="notification_sound_battery_charge_title">Enable battery charge level warning</string>
+    <string name="notification_battery_charge_level_title">Battery charge warning</string>
+    <string name="notification_battery_charge_level_summary">Play a sound when the battery as reach a level when charging</string>
+    <string name="notification_battery_charge_level_seek_bar">Battery level</string>
+    <string name="notification_battery_charge_level_ringtone">Ringtone</string>
+    <string name="notification_battery_charge_level_silent">Silent</string>
+
 </resources>

@@ -42,6 +42,12 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
 
+    <Preference
+        android:key="kasumi_maintainer"
+        android:title="@string/kasumi_maintainer_title"
+        android:summary="@string/kasumi_maintainer"
+        settings:enableCopying="true"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
