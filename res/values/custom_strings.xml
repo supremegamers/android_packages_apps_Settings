@@ -263,8 +263,8 @@
     <string name="ticker_tick_duration_title">Ticker duration</string>
     
     <!-- Labs -->
-    <string name="kasumi_labs">Kasumi\'s Labs</string>
-    <string name="kasumi_labs_desc">Play with Kasumi and craft your own appearance!</string>
+    <string name="kasumi_labs">Kasumi\'s Closet</string>
+    <string name="kasumi_labs_desc">Dress Kasumi up however you want~!</string>
     <string name="kasumi_nshade_category_title">Notification shade</string>
     <string name="kasumi_statusbar_category_title">Statusbar</string>
 
