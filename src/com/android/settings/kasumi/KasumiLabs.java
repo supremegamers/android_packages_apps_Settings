@@ -31,6 +31,6 @@ public class KasumiLabs extends SettingsPreferenceFragment {
 
   @Override
   public int getMetricsCategory() {
-    return MetricsProto.MetricsEvent.KASUMI;
+    return MetricsProto.MetricsEvent.MATERIUM;
   }
 }
