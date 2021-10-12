@@ -37,7 +37,7 @@
     <!-- Lineage version -->
     <Preference
         android:key="lineage_version"
-        android:title="@string/materium_version"
+        android:title="@string/kasumi_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
