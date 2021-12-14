@@ -103,7 +103,9 @@
 
     <PreferenceCategory
         android:key="configure_notifications_advanced"
-        android:order="15">
+        android:title="@string/advanced_notifications_title"
+        android:order="15"
+        settings:initialExpandedChildrenCount="0">
 
     <com.android.settings.widget.preferences.SystemSettingSwitchPreference
             android:key="notification_sound_vib_screen_on"
