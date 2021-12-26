@@ -1065,9 +1065,9 @@ public class WifiConfigController implements TextWatcher,
             loadCertificates(
                     mEapCaCertSpinner,
                     Credentials.CA_CERTIFICATE,
-                    mDoNotValidateEapServerString,
-                    false,
-                    true);
+                    mDoNotValidateEapServerString /* noCertificateString */,
+                    false /* showMultipleCerts */,
+                    true /* showUsePreinstalledCertOption */);
             loadCertificates(
                     mEapUserCertSpinner,
                     Credentials.USER_PRIVATE_KEY,
@@ -1157,9 +1157,9 @@ public class WifiConfigController implements TextWatcher,
                     loadCertificates(
                             mEapCaCertSpinner,
                             Credentials.CA_CERTIFICATE,
-                            mDoNotValidateEapServerString,
-                            true,
-                            true);
+                            mDoNotValidateEapServerString /* noCertificateString */,
+                            true /* showMultipleCerts */,
+                            true /* showUsePreinstalledCertOption */);
                     setSelection(mEapCaCertSpinner, mMultipleCertSetString);
                 }
             }
