@@ -29,21 +29,12 @@ android_library {
 
     srcs: ["src/**/*.java",
            "SakuraSettings/src/**/*.java",
-            "koush/Widgets/Widgets/src/**/*.java",
-            "koush/Superuser/Superuser/src/**/*.java",
-            "src/com/android/settings/cyanogenmod/superuser/*.java",
     ],
 
-    aaptflags: ["--extra-packages com.sakura.settings",
-                "--extra-packages com.koushikdutta.superuser",
-                "--extra-packages com.koushikdutta.widgets",    
-                ],
+    aaptflags: ["--extra-packages com.sakura.settings"],
 
     resource_dirs: ["res",
-                    "SakuraSettings/res",
-                    "koush/Widgets/WidgetsSample/res",
-                    "koush/Widgets/Widgets/res",
-                    "koush/Superuser/Superuser/res",
+                    "SakuraSettings/res"
     ],
 
     static_libs: [
