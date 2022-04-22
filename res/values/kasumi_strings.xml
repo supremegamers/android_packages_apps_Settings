@@ -6,12 +6,12 @@
     <string name="kasumi_rom_name">ROM Name</string>
     <string name="kasumi_rom_name_summary">Project Kasumi</string>
     <string name="kasumi_rom_version">ROM Version</string>
-    <string name="kasumi_rom_version_summary">1.1</string>
+    <string name="kasumi_rom_version_summary">1.2</string>
     <string name="kasumi_codename">Codename</string>
     <string name="kasumi_codename_summary">PoPiPa</string>
     <string name="kasumi_founder">ROM Founder</string>
     <string name="kasumi_founder_summary">"Yuki (@AITEx64)"</string>
-    <string name="kasumi_tg_chat">Official Telegram Chat</string>
-    <string name="kasumi_tg_chat_summary">@KasumiChat</string>
+    <string name="kasumi_tg_chat">Discord</string>
+    <string name="kasumi_tg_chat_summary">FRYUFtWDc6</string>
 
 </resources>
