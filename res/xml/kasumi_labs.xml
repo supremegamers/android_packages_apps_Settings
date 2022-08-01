@@ -112,7 +112,7 @@
           android:title="@string/edge_lighting_category_title" >
 
           <com.android.settings.widget.preferences.SystemSettingSwitchPreference
-              android:key="pulse_ambient_light"
+              android:key="ambient_notification_light"
               android:title="@string/pulse_ambient_light_title"
               android:summary="@string/pulse_ambient_light_summary"
               android:defaultValue="false" />
@@ -122,7 +122,7 @@
               android:title="@string/ambient_notification_light_enabled_title"
               android:summary="@string/ambient_notification_light_enabled_sumary"
               android:defaultValue="false"
-              android:dependency="pulse_ambient_light" />
+              android:dependency="ambient_notification_light" />
 
     </PreferenceCategory>
 
