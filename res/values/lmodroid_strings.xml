@@ -239,6 +239,7 @@
     <string name="power_menu_bug_report_devoptions_unavailable">Bug reporting is disabled as development settings aren\'t enabled</string>
     <string name="power_menu_bug_report_unavailable_for_user">Bug reporting is disabled for non-primary users.</string>
     <string name="power_menu_emergency_title">Emergency</string>
+    <string name="power_menu_emergency_affordance_enabled">Emergency affordance is enabled</string>
     <string name="power_menu_devicecontrols_title">Device controls</string>
     <string name="power_menu_advanced_restart_title">Advanced restart</string>
     <string name="power_menu_advanced_restart_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
@@ -348,33 +349,23 @@
 
     <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Network traffic monitor</string>
-    <string name="network_traffic_settings_summary">Display and customize current network traffic levels</string>
-    <string name="network_traffic_location_title">Location</string>
-    <string name="network_traffic_location_disable">Disabled</string>
-    <string name="network_traffic_location_statusbar">Statusbar</string>
-    <string name="network_traffic_location_quick_statusbar">Quick Statusbar</string>
+    <string name="network_traffic_settings_summary">Show current network traffic levels in the status bar</string>
     <string name="network_traffic_mode_title">Display mode</string>
+    <string name="network_traffic_mode_disable">Disabled</string>
     <string name="network_traffic_mode_up">Upload only</string>
     <string name="network_traffic_mode_down">Download only</string>
     <string name="network_traffic_mode_all">Upload and download</string>
+    <string name="network_traffic_position_title">Position</string>
     <string name="network_traffic_autohide">Auto hide</string>
-    <string name="network_traffic_autohide_summary">Hide the traffic monitor when inactive</string>
-    <string name="network_traffic_autohide_kilobits">Kb/s</string>
-    <string name="network_traffic_autohide_kilobytes">KB/s</string>
-    <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
-    <string name="network_traffic_refresh_interval_title">Refresh interval</string>
-    <string name="network_traffic_refresh_interval_summary">Duration after which speed is remeasured</string>
+    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_units_title">Traffic measurement units</string>
-    <string name="network_traffic_units_bits">Bits per second (b/s)</string>
     <string name="network_traffic_units_kilobits">Kilobits per second (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabits per second (Mb/s)</string>
-    <string name="network_traffic_units_bytes">Bytes per second (B/s)</string>
     <string name="network_traffic_units_kilobytes">Kilobytes per second (kB/s)</string>
     <string name="network_traffic_units_megabytes">Megabytes per second (MB/s)</string>
-    <string name="network_traffic_hidearrow">Hide arrows</string>
-    <string name="network_traffic_hidearrow_summary">Hide the network traffic indicator arrows</string>
-    <!-- Units -->
-    <string name="unit_seconds">seconds</string>
+    <string name="network_traffic_show_units">Show units</string>
+    <string name="network_traffic_show_units_summary">Whether to show traffic measurement units in the statusbar</string>
+    <string name="network_traffic_disabled_clock">Network traffic disabled due to clock position</string>
 
     <!-- QS settings -->
     <string name="qs_title">Quick settings</string>
@@ -493,6 +484,22 @@
     <string name="light_brightness_normal">Normal</string>
     <string name="light_brightness_zen">Do Not Disturb</string>
 
+    <!-- Charging control settings -->
+    <string name="charging_control_title">Charging control</string>
+    <string name="charging_control_enable_title">Enable charging control</string>
+    <string name="charging_control_mode_title">Charging mode</string>
+    <string name="charging_control_mode_auto_title">Automatic schedule</string>
+    <string name="charging_control_mode_auto_summary">Automatically determine when to start charging based on alarms set</string>
+    <string name="charging_control_mode_custom_title">Custom schedule</string>
+    <string name="charging_control_mode_custom_summary">Set a target time to full charge</string>
+    <string name="charging_control_mode_limit_title">Limit charging</string>
+    <string name="charging_control_mode_limit_summary">Limit charging to a certain percentage</string>
+    <string name="charging_control_start_time_title">Start time</string>
+    <string name="charging_control_start_time_summary">Charging control activates when you start charging after %s</string>
+    <string name="charging_control_target_time_title">Target time to full charge</string>
+    <string name="charging_control_target_time_summary">Battery will be fully charged by %s</string>
+    <string name="charging_control_limit_title">Limit</string>
+
     <!-- Battery light settings -->
     <string name="battery_light_title">Battery light</string>
     <string name="battery_light_enable_title">Enable battery light</string>
@@ -541,10 +548,6 @@
     <string name="three_finger_gesture">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
 
-    <!-- Pocket judge -->
-    <string name="pocket_judge_title">Pocket detection</string>
-    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
-
     <!-- Wi-Fi Standard icon -->
     <string name="show_wifi_standard_icon_title">Show Wi-Fi Standard icon</string>
     <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
@@ -585,6 +588,8 @@
 
     <!-- Private DNS -->
     <string name="private_dns_mode_cloudflare" translatable="false">Cloudflare DNS</string>
+    <!-- Alternative: 1dot1dot1dot1.cloudflare-dns.com -->
+    <string name="private_dns_hostname_cloudflare" translatable="false">one.one.one.one</string>
 
     <!-- Text shown for the title of the panic option -->
     <string name="power_menu_panic_title">Panic trigger</string>
@@ -703,10 +708,6 @@
     <!-- Blur -->
     <string name="window_blur">Enable blur</string>
 
-    <!-- Old mobiletype icon style -->
-    <string name="old_mobiletype_title">Old style signal icon</string>
-    <string name="old_mobiletype_summary">Merge signal and signal type icons</string>
-
     <!-- Navbar -->
     <string name="navbar_tuner_title">Navbar tuner</string>
     <string name="navbar_tuner_summary">Customize your navbar layout</string>
@@ -718,12 +719,15 @@
     <string name="prevent_pointer_acceleration_pointer">Pointer only</string>
     <string name="prevent_pointer_acceleration_none">None</string>
 
-    <!-- Transistent task mode (Tadi mode) -->
-    <string name="transistent_task_mode_title">Transistent task mode</string>
-    <string name="transistent_task_mode_dialog_title">Transistent task mode (Reboot your device to apply changes)</string>
-    <string name="transistent_task_mode_summary">Dismiss apps from recents when last activity gets closed using back button.</string>
-    <string name="transistent_task_mode_default">Disable (Default)</string>
-    <string name="transistent_task_mode_allow">Enable (Some apps will stay)</string>
-    <string name="transistent_task_mode_force">Force (Override app behaviour)</string>
+    <!-- Transient task mode (Tadi mode) -->
+    <string name="transient_task_mode_title">Transient task mode</string>
+    <string name="transient_task_mode_dialog_title">Transient task mode (Reboot your device to apply changes)</string>
+    <string name="transient_task_mode_summary">Dismiss apps from recents when last activity gets closed using back button.</string>
+    <string name="transient_task_mode_default">Disable (Default)</string>
+    <string name="transient_task_mode_allow">Enable (Some apps will stay)</string>
+    <string name="transient_task_mode_force">Force (Override app behaviour)</string>
+
+    <!-- Location settings screen, setting summary for Assisted GPS switch -->
+    <string name="assisted_gps_summary">Download satellite assistance data from the internet which can greatly improve the GPS startup performance. For emergency calls, assisted GPS is always allowed.</string>
 
 </resources>

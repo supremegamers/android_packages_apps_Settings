@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2014-2015 The CyanogenMod Project
- *               2017-2021 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -72,14 +72,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private PreferenceCategory mStatusBarBatteryCategory;
     private PreferenceCategory mStatusBarClockCategory;
 
-    private boolean mHasNotch;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.status_bar_settings);
-
-        mHasNotch = DeviceUtils.hasNotch(getActivity());
 
         mStatusBarAmPm = findPreference(STATUS_BAR_AM_PM);
         mStatusBarClock = findPreference(STATUS_BAR_CLOCK_STYLE);
@@ -125,7 +121,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
         }
 
-        final boolean disallowCenteredClock = mHasNotch;
+        final boolean disallowCenteredClock = DeviceUtils.hasCenteredCutout(getActivity())
+                    || getNetworkTrafficStatus() != 0;
 
         // Adjust status bar preferences for RTL
         if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
@@ -147,6 +144,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             }
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries);
         }
+
     }
 
     @Override
@@ -156,6 +154,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         switch (key) {
             case STATUS_BAR_QUICK_QS_PULLDOWN:
                 updateQuickPulldownSummary(value);
+                break;
+            case STATUS_BAR_CLOCK_STYLE:
                 break;
             case STATUS_BAR_BATTERY_STYLE:
                 enableStatusBarBatteryDependents(value);
@@ -188,9 +188,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mQuickPulldown.setSummary(summary);
     }
 
-    private int getClockPosition() {
-        return Settings.System.getInt(getActivity().getContentResolver(),
-                STATUS_BAR_CLOCK_STYLE, 2);
+    private int getNetworkTrafficStatus() {
+        int mode = Settings.Secure.getInt(getActivity().getContentResolver(),
+                Settings.Secure.NETWORK_TRAFFIC_MODE, 0);
+        int position = Settings.Secure.getInt(getActivity().getContentResolver(),
+                Settings.Secure.NETWORK_TRAFFIC_POSITION, /* Center */ 1);
+        return mode != 0 && position == 1 ? 1 : 0;
     }
 
     @Override
@@ -202,11 +205,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             new BaseSearchIndexProvider(R.xml.status_bar_settings) {
 
         @Override
-        public List<String> getNonIndexableKeys(Context context) {
-            final List<String> result = super.getNonIndexableKeys(context);
-
-            result.add(NETWORK_TRAFFIC_SETTINGS);
-            return result;
+        protected boolean isPageSearchEnabled(Context context) {
+            // Enable page search only if LMO features are available.
+            return context.getResources()
+                    .getBoolean(R.bool.config_show_lmo_features_settings);
         }
+
     };
 }

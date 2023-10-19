@@ -127,7 +127,7 @@
     <uses-permission android:name="lineageos.permission.MANAGE_LIVEDISPLAY" />
 
     <!-- App lock -->
-    <uses-permission android:name="android.permission.MANAGE_APP_LOCK" />
+    <uses-permission android:name="com.android.permission.MANAGE_APP_LOCK" />
 
     <application
             android:name=".SettingsApplication"
@@ -145,6 +145,10 @@
             android:enableOnBackInvokedCallback="true">
 
         <uses-library android:name="org.apache.http.legacy" />
+
+        <property
+            android:name="android.window.PROPERTY_ACTIVITY_EMBEDDING_SPLITS_ENABLED"
+            android:value="true" />
 
         <!-- Settings -->
         <activity android:name=".homepage.SettingsHomepageActivity"
@@ -3014,7 +3018,6 @@
         <activity android:name=".FallbackHome"
                   android:excludeFromRecents="true"
                   android:label=""
-                  android:screenOrientation="nosensor"
                   android:taskAffinity="com.android.settings.FallbackHome"
                   android:exported="true"
                   android:theme="@style/FallbackHome"
@@ -3450,7 +3453,7 @@
                   android:label="@string/notification_channel_title"
                   android:theme="@style/Theme.Panel"
                   android:excludeFromRecents="true"
-                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:configChanges="keyboardHidden|screenSize"
                   android:exported="true">
             <intent-filter android:priority="1">
                 <action android:name="android.settings.CHANNEL_NOTIFICATION_SETTINGS" />
@@ -4603,7 +4606,7 @@
         <!-- App lock -->
         <activity android:name=".security.applock.AppLockCredentialActivity"
             android:exported="false"
-            android:permission="android.permission.MANAGE_APP_LOCK"
+            android:permission="com.android.permission.MANAGE_APP_LOCK"
             android:excludeFromRecents="true"
             android:stateNotNeeded="true"
             android:taskAffinity="com.android.settings.applock"

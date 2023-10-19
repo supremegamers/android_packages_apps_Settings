@@ -458,6 +458,9 @@ public final class Utils extends com.android.settingslib.Utils {
      * @return the managed profile id or UserHandle.USER_NULL if there is none.
      */
     public static int getManagedProfileId(UserManager um, int parentUserId) {
+        if (um.isManagedProfile(parentUserId)) {
+            return parentUserId;
+        }
         final int[] profileIds = um.getProfileIdsWithDisabled(parentUserId);
         for (int profileId : profileIds) {
             if (profileId != parentUserId) {
@@ -1228,6 +1231,24 @@ public final class Utils extends com.android.settingslib.Utils {
     @ColorInt
     public static int getHomepageIconColorHighlight(Context context) {
         return context.getColor(R.color.accent_select_primary_text);
+    }
+
+    /**
+     * Returns if dreams are available to the current user.
+     */
+    public static boolean areDreamsAvailableToCurrentUser(Context context) {
+        if (!context.getResources().getBoolean(
+                com.android.internal.R.bool.config_dreamsSupported)) {
+            return false;
+        }
+
+        if (!context.getResources().getBoolean(
+                com.android.internal.R.bool.config_dreamsOnlyEnabledForDockUser)) {
+            return true;
+        }
+
+        final UserManager userManager = context.getSystemService(UserManager.class);
+        return userManager != null && userManager.isSystemUser();
     }
 
     public static String normalizeTitleCaseIfRequired(Context context, String input) {

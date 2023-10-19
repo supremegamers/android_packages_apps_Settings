@@ -17,6 +17,7 @@
 
 package com.android.settings.libremobileos.buttons;
 
+import static android.inputmethodservice.InputMethodService.canImeRenderGesturalNavButtons;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON_OVERLAY;
@@ -53,7 +54,7 @@ import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
-import static com.android.systemui.shared.recents.utilities.Utilities.isTablet;
+import static com.android.systemui.shared.recents.utilities.Utilities.isLargeScreen;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -499,13 +500,13 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 mEnableTaskbar.setOnPreferenceChangeListener(this);
                 mEnableTaskbar.setChecked(Settings.System.getInt(getContentResolver(),
                         Settings.System.ENABLE_TASKBAR,
-                        isTablet(getContext()) ? 1 : 0) == 1);
+                        isLargeScreen(getContext()) ? 1 : 0) == 1);
                 toggleTaskBarDependencies(mEnableTaskbar.isChecked());
             }
         }
 
         mNavbarTuner = findPreference(KEY_NAVBAR_TUNER);
-        if (isGestureNavigationEnabled(getActivity())) {
+        if (canImeRenderGesturalNavButtons() && isGestureNavigationEnabled(getActivity())) {
             extrasCategory.removePreference(mNavbarTuner);
         }
 
@@ -778,7 +779,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
                 if (DeviceUtils.isEdgeToEdgeEnabled(getContext())) {
                     mNavigationPreferencesCat.addPreference(mEdgeLongSwipeAction);
 
-                    mNavigationPreferencesCat.removePreference(mNavigationArrowKeys);
+                    if (canImeRenderGesturalNavButtons()) {
+                        mNavigationPreferencesCat.removePreference(mNavigationArrowKeys);
+                    }
                     mNavigationPreferencesCat.removePreference(mNavigationBackLongPressAction);
                     mNavigationPreferencesCat.removePreference(mNavigationHomeLongPressAction);
                     mNavigationPreferencesCat.removePreference(mNavigationHomeDoubleTapAction);
@@ -979,6 +982,13 @@ public class ButtonSettings extends SettingsPreferenceFragment
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider(R.xml.button_settings) {
+
+        @Override
+        protected boolean isPageSearchEnabled(Context context) {
+            // Enable page search only if LMO features are available.
+            return context.getResources()
+                    .getBoolean(R.bool.config_show_lmo_features_settings);
+        }
 
         @Override
         public List<String> getNonIndexableKeys(Context context) {
