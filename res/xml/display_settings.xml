@@ -202,14 +202,15 @@
             android:key="double_tap_sleep_gesture"
             android:title="@string/status_bar_double_tap_to_sleep_title"
             android:summary="@string/status_bar_double_tap_to_sleep_summary"
-            android:defaultValue="false" />
+            android:defaultValue="@*android:bool/config_dt2sGestureEnabledByDefault"
+            settings:requiresConfig="@*android:bool/config_dt2sGestureAvailable" />
 
         <com.libremobileos.support.preferences.SystemSettingSwitchPreference
             android:key="wake_when_plugged_or_unplugged"
             android:title="@string/wake_when_plugged_or_unplugged_title"
             android:summary="@string/wake_when_plugged_or_unplugged_summary"
             android:defaultValue="@*android:bool/config_unplugTurnsOnScreen"
-            settings:requiresConfig="@*com.android.settings:bool/config_show_top_level_battery" />
+            settings:requiresConfig="@bool/config_show_top_level_battery" />
 
         <com.libremobileos.support.preferences.SystemSettingSwitchPreference
             android:key="high_touch_polling_rate_enable"
